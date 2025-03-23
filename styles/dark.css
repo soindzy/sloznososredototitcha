@@ -1,0 +1,23 @@
+.theme_dark {
+  --bg-color: rgb(0, 24, 63);
+  --title-color: rgb(219, 0, 255);
+  --subheading-color: rgb(0, 0, 40);
+  --accent-color: rgb(255, 0, 112);
+  --nav-color: rgb(255, 0, 112);
+  --nav-hover-color: rgba(50, 49, 45, 0.4);
+  --text-color: rgb(241, 178, 206);
+  --bg-image: url(../images/cover-image-dark.png);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: rgb(0, 24, 63);
+    --title-color: rgb(219, 0, 255);
+    --subheading-color: rgb(0, 0, 40);
+    --accent-color: rgb(255, 0, 112);
+    --nav-color: rgb(255, 0, 112);
+    --nav-hover-color: rgba(50, 49, 45, 0.4);
+    --text-color: rgb(241, 178, 206);
+    --bg-image: url(../images/cover-image-dark.png);
+  }
+}
