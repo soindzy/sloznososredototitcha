@@ -18,9 +18,9 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: 14.x
-    - name: Check if the repository is private
+    - name: Check if the repository is public
       run: exit 1
-      if: ${{github.event.repository.private}}
+      if: ${{github.event.repository.public}}
     - name: Get testing lib
       run: set -eu && git clone --branch main --single-branch --depth 1 https://github.com/Yandex-Practicum/tests-selfmade-project-6-public.git
     - name: Run the tests
